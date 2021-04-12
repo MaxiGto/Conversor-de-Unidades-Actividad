@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Conversor de Unidades</title>
+</head>
+<body>
+    <h1>Radiofísica</h1>
+
+    <main class="contenedor">
+
+            <h2>Conversor de Unidades</h2>
+
+            <div id="mensaje"></div>
+            
+            <form action="#" method="post" id="formulario" >
+                <div>
+                    <input type="number" min="0" class="input-number" id="valor">
+                    <select name="unidad1" id="u1" class="select">
+                        <option value="mCi">mCi</option>
+                        <option value="MBq">MBq</option>
+                        <option value="dpm">dpm</option>
+                    </select>
+                </div>
+                <div>
+                    <i class="fas fa-arrows-alt-v"></i>
+                </div>
+                <div>
+                    <label for="unidad2" class="label">Convertir a: </label>
+                    <select name="unidad2" id="u2" class="select">
+                        <option value="mCi">mCi</option>
+                        <option value="MBq">MBq</option>
+                        <option value="dpm">dpm</option>
+                    </select>
+                </div>
+                <div>
+                    <img id="spinner" src="img/spinner.gif" width="150">
+                </div>  
+
+                <div id="resultado"></div>
+
+                <button class="boton" type="submit" id="calcular">Calcular <i class="fas fa-poll"></i></button>
+                <button class="boton" type="submit" id="limpiar">Limpiar <i class="fas fa-trash-alt"></i></button>
+            </form>
+
+    </main>
+
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
